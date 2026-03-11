@@ -9,9 +9,7 @@ const todoRoutes = require("./routes/todoRoutes");
 
 const app = express();
 
-app.use(cors({
-  origin: "https://full-stack-to-do-dusky.vercel.app/"
-}));
+app.use(cors());
 app.use(express.json());
 
 connectDB();
